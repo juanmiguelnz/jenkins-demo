@@ -7,7 +7,8 @@ pipeline {
         stage('Stage 1') {
             steps {
                 echo "Agent Information: "
-                sh 'cat /etc/os-release'
+                sh 'chmod +x sample-script.sh'
+                sh 'sample-script.sh'
             }
         }
         stage('Stage 2') {
