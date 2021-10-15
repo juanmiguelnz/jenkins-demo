@@ -7,7 +7,7 @@ pipeline {
         stage('Stage 1') {
             steps {
                 echo "This is release version $RELEASE"
-                sh 'ls -al'
+                sh 'cat /etc/os-release'
             }
         }
         stage('Stage 2') {
