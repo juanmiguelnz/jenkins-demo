@@ -1,9 +1,12 @@
 pipeline {
     agent any
+    environment {
+        RELEASE='1.0'
+    }
     stages {
         stage('Stage 1') {
             steps {
-                echo 'Listing directory...'
+                echo "This is release version $RELEASE"
                 sh 'ls -al'
             }
         }
