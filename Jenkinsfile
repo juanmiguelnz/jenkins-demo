@@ -8,7 +8,7 @@ pipeline {
             steps {
                 echo "Agent Information: "
                 sh 'ls -al'
-                sh 'sudo apt update'
+                sh 'apt update'
             }
         }
         stage('Stage 2') {
