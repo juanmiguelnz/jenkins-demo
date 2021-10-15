@@ -1,4 +1,5 @@
 #!/bin/bash
 
 apt update && apt upgrade
-apt install wget build-essential libreadline-gplv2-dev libncursesw5-dev
+apt install python3 python3-pip
+python3.9 --version
