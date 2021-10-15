@@ -12,7 +12,7 @@ pipeline {
         }
         stage('Stage 2') {
             steps {
-                sh 'sudo apt update & sudo apt upgrade'
+                sh 'apt update & sudo apt upgrade'
             }
         }
     }
