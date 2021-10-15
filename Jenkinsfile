@@ -6,9 +6,8 @@ pipeline {
     stages {
         stage('Stage 1') {
             steps {
-                echo "Agent Information: "
-                sh 'ls -al'
-                sh "$WORKSPACE/sample-script.sh"
+                sh "chmod +x $WORKSPACE/sample-script.sh"
+                sh "sudo $WORKSPACE/sample-script.sh"
             }
         }
         stage('Stage 2') {
