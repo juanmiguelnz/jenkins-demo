@@ -16,4 +16,9 @@ pipeline {
             }
         }
     }
+    post {
+        success {
+            archiveArtifacts 'test-results.txt'
+        }
+    }
 }
