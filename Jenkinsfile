@@ -6,6 +6,7 @@ pipeline {
     stages {
         stage('Stage 1') {
             steps {
+                sh "hostname"
                 sh "chmod +x $WORKSPACE/sample-script.sh"
                 sh "sudo $WORKSPACE/sample-script.sh"
             }
