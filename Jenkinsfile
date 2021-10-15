@@ -9,7 +9,7 @@ pipeline {
                 echo "Agent Information: "
                 sh 'ls -al'
                 sh 'chmod +x sample-script.sh'
-                sh 'sample-script.sh'
+                sh './sample-script.sh'
             }
         }
         stage('Stage 2') {
