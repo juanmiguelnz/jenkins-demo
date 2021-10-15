@@ -8,7 +8,7 @@ pipeline {
             steps {
                 echo "Agent Information: "
                 sh 'ls -al'
-                sh './sample-script.sh'
+                sh "$WORKSPACE/sample-script.sh"
             }
         }
         stage('Stage 2') {
