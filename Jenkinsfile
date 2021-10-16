@@ -15,7 +15,7 @@ pipeline {
         }
         stage('Stage 2') {
             steps {
-                writeFile file: 'test-results.txt', text: 'passed'
+                sh "./sample-script.sh"
             }
         }
     }
