@@ -1,7 +1,10 @@
 pipeline {
     agent any
     environment {
-        RELEASE='1.0'
+        AZ_TENANT = credentials('az_tenant')
+        AZ_SUBSCRIPTION = credentials('az_subscription')
+        AZ_USER = credentials('az_user')
+        AZ_PASSWORD = credentials('az_password')
     }
     stages {
         stage('Stage 1') {
