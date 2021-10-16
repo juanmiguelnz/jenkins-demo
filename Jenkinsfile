@@ -11,7 +11,7 @@ pipeline {
             steps {
                 sh "hostname"
                 sh "chmod +x $WORKSPACE/sample-script.sh"
-                sh "az login --service-principal -u $AZ_USER -p $AZ_PASSWORD --tenant $AZ_TENANT"
+                sh "sudo $WORKSPACE/sample-script.sh"
             }
         }
         stage('Stage 2') {
